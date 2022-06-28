@@ -4,17 +4,18 @@ namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 use phpDocumentor\Reflection\Types\Integer;
 
 class GetResponseController extends Controller
 {
     //get responses with no child (simple)
-    public function get_simple_response(){
-        return json_encode(['status' => 'success' , 'data' => 'test']);
+    public function simple_response(){
+        $response = Http::get('https://jsonplaceholder.typicode.com/posts');
     }
 
     //get responses with child objects
-    public function get_responses_with_child(){
-        return json_encode(['status' => 'success' , 'data' => 'test']);
+    public function responses_with_child(){
+        $response = Http::get('https://jsonplaceholder.typicode.com/users');
     }
 }

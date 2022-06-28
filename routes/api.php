@@ -19,5 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/simpleresponse',[GetResponseController::class,'get_simple_response']);
-Route::post('/responsewithchild',[GetResponseController::class,'get_responses_with_child']);
+Route::post('/simpleresponse',[GetResponseController::class,'simple_response']);
+Route::post('/responsewithchild',[GetResponseController::class,'responses_with_child']);
