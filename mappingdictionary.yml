@@ -1,0 +1,13 @@
+users :
+  id : "id"
+  name : "name"
+  email : "email"
+  phone : "phone"
+  company : "company"
+
+
+posts :
+  id : "id"
+  user_id : "userId"
+  title : "title"
+  body : "body"
