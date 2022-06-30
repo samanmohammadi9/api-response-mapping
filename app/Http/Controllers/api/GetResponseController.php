@@ -4,10 +4,7 @@ namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\MapController;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
-use phpDocumentor\Reflection\PseudoTypes\NegativeInteger;
-use phpDocumentor\Reflection\Types\Integer;
 
 class GetResponseController extends Controller
 {
